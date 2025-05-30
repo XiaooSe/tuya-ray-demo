@@ -65,21 +65,21 @@ declare namespace SmartMiniprogram {
      * 设置 bottom 值 */
     bottom(
       /** 长度值，如果传入 number 则默认使用 px，可传入其他自定义单位的长度值 */
-      value: number | string
+      value: number | string,
     ): Animation;
 
     /**
      * 设置高度 */
     height(
       /** 长度值，如果传入 number 则默认使用 px，可传入其他自定义单位的长度值 */
-      value: number | string
+      value: number | string,
     ): Animation;
 
     /**
      * 设置 left 值 */
     left(
       /** 长度值，如果传入 number 则默认使用 px，可传入其他自定义单位的长度值 */
-      value: number | string
+      value: number | string,
     ): Animation;
 
     /**
@@ -94,21 +94,21 @@ declare namespace SmartMiniprogram {
      * 设置透明度 */
     opacity(
       /** 透明度，范围 0-1 */
-      value: number
+      value: number,
     ): Animation;
 
     /**
      * 设置 right 值 */
     right(
       /** 长度值，如果传入 number 则默认使用 px，可传入其他自定义单位的长度值 */
-      value: number | string
+      value: number | string,
     ): Animation;
 
     /**
      * 从原点顺时针旋转一个角度 */
     rotate(
       /** 旋转的角度。范围 [-180, 180] */
-      angle: number
+      angle: number,
     ): Animation;
 
     /**
@@ -121,28 +121,28 @@ declare namespace SmartMiniprogram {
       /** 旋转轴的 z 坐标 */
       z: number,
       /** 旋转的角度。范围 [-180, 180] */
-      angle: number
+      angle: number,
     ): Animation;
 
     /**
      * 从 X 轴顺时针旋转一个角度 */
     rotateX(
       /** 旋转的角度。范围 [-180, 180] */
-      angle: number
+      angle: number,
     ): Animation;
 
     /**
      * 从 Y 轴顺时针旋转一个角度 */
     rotateY(
       /** 旋转的角度。范围 [-180, 180] */
-      angle: number
+      angle: number,
     ): Animation;
 
     /**
      * 从 Z 轴顺时针旋转一个角度 */
     rotateZ(
       /** 旋转的角度。范围 [-180, 180] */
-      angle: number
+      angle: number,
     ): Animation;
 
     /**
@@ -151,7 +151,7 @@ declare namespace SmartMiniprogram {
       /** 当仅有 sx 参数时，表示在 X 轴、Y 轴同时缩放sx倍数 */
       sx: number,
       /** 在 Y 轴缩放 sy 倍数 */
-      sy?: number
+      sy?: number,
     ): Animation;
 
     /**
@@ -162,28 +162,28 @@ declare namespace SmartMiniprogram {
       /** y 轴的缩放倍数 */
       sy: number,
       /** z 轴的缩放倍数 */
-      sz: number
+      sz: number,
     ): Animation;
 
     /**
      * 缩放 X 轴 */
     scaleX(
       /** X 轴的缩放倍数 */
-      scale: number
+      scale: number,
     ): Animation;
 
     /**
      * 缩放 Y 轴 */
     scaleY(
       /** Y 轴的缩放倍数 */
-      scale: number
+      scale: number,
     ): Animation;
 
     /**
      * 缩放 Z 轴 */
     scaleZ(
       /** Z 轴的缩放倍数 */
-      scale: number
+      scale: number,
     ): Animation;
 
     /**
@@ -192,21 +192,21 @@ declare namespace SmartMiniprogram {
       /** 对 X 轴坐标倾斜的角度，范围 [-180, 180] */
       ax: number,
       /** 对 Y 轴坐标倾斜的角度，范围 [-180, 180] */
-      ay: number
+      ay: number,
     ): Animation;
 
     /**
      * 对 X 轴坐标进行倾斜 */
     skewX(
       /** 倾斜的角度，范围 [-180, 180] */
-      angle: number
+      angle: number,
     ): Animation;
 
     /**
      * 对 Y 轴坐标进行倾斜 */
     skewY(
       /** 倾斜的角度，范围 [-180, 180] */
-      angle: number
+      angle: number,
     ): Animation;
 
     /**
@@ -217,7 +217,7 @@ declare namespace SmartMiniprogram {
      * 设置 top 值 */
     top(
       /** 长度值，如果传入 number 则默认使用 px，可传入其他自定义单位的长度值 */
-      value: number | string
+      value: number | string,
     ): Animation;
 
     /**
@@ -226,7 +226,7 @@ declare namespace SmartMiniprogram {
       /** 当仅有该参数时表示在 X 轴偏移 tx，单位 px */
       tx?: number,
       /** 在 Y 轴平移的距离，单位为 px */
-      ty?: number
+      ty?: number,
     ): Animation;
 
     /**
@@ -237,35 +237,35 @@ declare namespace SmartMiniprogram {
       /** 在 Y 轴平移的距离，单位为 px */
       ty?: number,
       /** 在 Z 轴平移的距离，单位为 px */
-      tz?: number
+      tz?: number,
     ): Animation;
 
     /**
      * 对 X 轴平移 */
     translateX(
       /** 在 X 轴平移的距离，单位为 px */
-      translation: number
+      translation: number,
     ): Animation;
 
     /**
      * 对 Y 轴平移 */
     translateY(
       /** 在 Y 轴平移的距离，单位为 px */
-      translation: number
+      translation: number,
     ): Animation;
 
     /**
      * 对 Z 轴平移 */
     translateZ(
       /** 在 Z 轴平移的距离，单位为 px */
-      translation: number
+      translation: number,
     ): Animation;
 
     /**
      * 设置宽度 */
     width(
       /** 长度值，如果传入 number 则默认使用 px，可传入其他自定义单位的长度值 */
-      value: number | string
+      value: number | string,
     ): Animation;
   }
 
@@ -306,7 +306,7 @@ declare namespace SmartMiniprogram {
      */
     boundingClientRect(
       /** 回调函数，在执行 `SelectorQuery.exec` 方法后，节点信息会在 `callback` 中返回。 */
-      callback?: BoundingClientRectCallback
+      callback?: BoundingClientRectCallback,
     ): SelectorQuery;
 
     /**
@@ -400,7 +400,7 @@ declare namespace SmartMiniprogram {
      */
     scrollOffset(
       /** 回调函数，在执行 `SelectorQuery.exec` 方法后，节点信息会在 `callback` 中返回。 */
-      callback?: ScrollOffsetCallback
+      callback?: ScrollOffsetCallback,
     ): SelectorQuery;
   }
 
@@ -912,14 +912,9 @@ declare namespace SmartMiniprogram {
     data: Record<string, any>;
   };
 
-
   interface WebviewContext {
-    postMessage(msg: { data: Record<string, any>}): void;
-    reload(options?: {
-      success?: () => void;
-      fail?: () => void;
-      complete?: () => void;
-    }): void;
+    postMessage(msg: { data: Record<string, any> }): void;
+    reload(options?: { success?: () => void; fail?: () => void; complete?: () => void }): void;
   }
 
   interface TY {
@@ -941,7 +936,7 @@ declare namespace SmartMiniprogram {
      *
      */
     requestCloud<T extends RequestCloudOptions = RequestCloudOptions>(
-      option: T
+      option: T,
     ): PromisifySuccessResult<T, RequestCloudOptions>;
 
     /**

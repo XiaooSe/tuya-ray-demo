@@ -31,10 +31,10 @@ declare namespace SmartMiniprogram {
   }
     ? void
     : P extends { fail: any }
-    ? void
-    : P extends { complete: any }
-    ? void
-    : Promise<Parameters<Exclude<T['success'], undefined>>[0]>;
+      ? void
+      : P extends { complete: any }
+        ? void
+        : Promise<Parameters<Exclude<T['success'], undefined>>[0]>;
 
   type RequestResult = { data: any };
   type RequestError = {

@@ -4,7 +4,7 @@ declare namespace SmartMiniprogram.Component {
     TProperty extends PropertyOption,
     TMethod extends Partial<MethodOption>,
     TCustomInstanceProperty extends IAnyObject = {},
-    TIsPage extends boolean = false
+    TIsPage extends boolean = false,
   > = InstanceProperties &
     InstanceMethods<TData> &
     TMethod &
@@ -22,7 +22,7 @@ declare namespace SmartMiniprogram.Component {
     TProperty extends PropertyOption,
     TMethod extends MethodOption,
     TCustomInstanceProperty extends IAnyObject = {},
-    TIsPage extends boolean = false
+    TIsPage extends boolean = false,
   > = Partial<Data<TData>> &
     Partial<Property<TProperty>> &
     Partial<Method<TMethod, TIsPage>> &
@@ -36,9 +36,9 @@ declare namespace SmartMiniprogram.Component {
       TProperty extends PropertyOption,
       TMethod extends MethodOption,
       TCustomInstanceProperty extends IAnyObject = {},
-      TIsPage extends boolean = false
+      TIsPage extends boolean = false,
     >(
-      options: Options<TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage>
+      options: Options<TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage>,
     ): string;
   }
 
@@ -71,16 +71,16 @@ declare namespace SmartMiniprogram.Component {
   type ValueType<T extends PropertyType> = T extends null
     ? any
     : T extends StringConstructor
-    ? string
-    : T extends NumberConstructor
-    ? number
-    : T extends BooleanConstructor
-    ? boolean
-    : T extends ArrayConstructor
-    ? any[]
-    : T extends ObjectConstructor
-    ? IAnyObject
-    : never;
+      ? string
+      : T extends NumberConstructor
+        ? number
+        : T extends BooleanConstructor
+          ? boolean
+          : T extends ArrayConstructor
+            ? any[]
+            : T extends ObjectConstructor
+              ? IAnyObject
+              : never;
   type FullProperty<T extends PropertyType> = {
     /** 属性类型 */
     type: T;
@@ -144,7 +144,7 @@ declare namespace SmartMiniprogram.Component {
        */
       data: Partial<D> & IAnyObject,
       /** setData 引起的界面更新渲染完毕后的回调函数 */
-      callback?: () => void
+      callback?: () => void,
     ): void;
 
     /** 检查组件是否具有 `behavior` （检查时会递归检查被直接或间接引入的所有behavior） */
@@ -202,7 +202,7 @@ declare namespace SmartMiniprogram.Component {
       selector: string,
       keyFrames: ScrollTimelineKeyframe[],
       duration: number,
-      scrollTimeline: ScrollTimelineOption
+      scrollTimeline: ScrollTimelineOption,
     ): void;
 
     /**
@@ -298,7 +298,7 @@ declare namespace SmartMiniprogram.Component {
     /** 使用该 behavior 的 component/behavior 的定义对象 */
     defFields: T,
     /** 该 behavior 所使用的 behavior 的 definitionFilter 函数列表 */
-    definitionFilterArr?: DefinitionFilter[]
+    definitionFilterArr?: DefinitionFilter[],
   ) => void;
 
   interface Lifetimes {
